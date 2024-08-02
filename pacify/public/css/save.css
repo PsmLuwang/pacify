@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+/* the dark portion */
+.header {
+    height: 30px;
+    width: 100dvw;
+    max-width: 800px;
+    background-color: #001F2B;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* save and clear all */
+.savesAndClearAllDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100dvw;
+    max-width: 800px;
+}
+.savesAndClearAllDiv h3 {
+    margin-inline: 30px;
+    font-weight: bold;
+    color: #385059;
+}
+.savesAndClearAllDiv button {
+    margin-inline: 30px;
+    height: 30px;
+    width: 100px;
+    background-color: #385059;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+}
+
+/* receipt summary component */
+.receiptSummaryComponent {
+    padding-top: 8px;
+    background-color: #E6ECF0;
+    width: 100dvw;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+.receiptSummaryComponent b, p {
+    color: #385059;
+    font-size: small;
+}
+.receiptUpperPart {
+    padding-inline: 15px;
+}
+.receiptLowerPart {
+    padding-left: 15px;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.remark {
+    flex: 1;
+}
+.top button {
+    background-color: #385059;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    width: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+    /* pointer-events: none; */
+}
+.remarkText p {
+    margin: 0px;
+}
+.receiptLowerPart {
+    margin-top: 5px;
+    border-block: 1px solid #AAC0CE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25px;
+}
+.totalDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27px;
+    width: 100px;
+    background-color: #385059;
+    margin-left: 20px;
+}
+.totalVp {
+    flex: 1;
+}
+.totalDiv b {
+    color: white;
+}
+
+/* navigation bar at the bottom */
+.navigation {
+    width: 100dvw;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-top: 1px solid #91ABB4;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+}
+.navHome, .navLive, .navSaved, .navProfile {
+    height: 70px;
+    width: 60px;
+    background-color: transparent;
+    border: none;
+    color: #7D8588;
+    font-weight: bold;
+    font-size: 13px;
+}
+.navSaved {
+    border-top: 3px solid #385059;
+    color: #385059;
+    text-decoration: underline;
+}

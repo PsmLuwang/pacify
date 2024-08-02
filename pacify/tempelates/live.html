@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../asset/app-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacify</title>
+    <link rel="stylesheet" href="../public/css/live.css">
+</head>
+<body>
+    <center>
+        <!-- dark portion on the top -->
+        <div class="header"></div>
+
+        <!-- heading of the page with a button -->
+        <div class="savesAndClearAllDiv">
+            <h3>Live schedules:</h3>
+            <button>My post</button>
+        </div>
+
+        <!-- container of the posts for live schedule -->
+        <!-- parent of many posts -->
+        <div class="liveComponentDiv" id="liveComponentDiv">
+            <!-- this is the parent of a single post -->
+            <div class="component">
+                <div class="upperComponent">
+                    <div class="imageDiv">
+                        <img src="../public/media/sample-speaker.jpg" alt="#">
+                    </div>
+                    <div class="textAndStatusDiv">
+                        <div class="liveDiv">
+                            <p>Live</p>
+                        </div>
+                        <div class="textDiv">
+                            <p><b>Topic: ABCD Meet</b></p>
+                            <p><b>Time: </b>6:00 pm</p>
+                            <p class="description"><b>Description: </b>This is discription box. The host can notice anything here in the form of text.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lowerComponent">
+                    <p>Speaker: Mr. Handsome Meitei</p>
+                    <p>ABC Rank</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- the button on the bottom-right corner  -->
+        <div class="saveDiv">
+            <button class="saveReceipt">+</button>
+        </div>
+
+        <!-- navigation bar -->
+        <div class="navigation" id="navigation">
+            <button class="navHome" onclick="window.location.href='home.html'">Home</button>
+            <button class="navLive">Live</button>
+            <button class="navSaved" onclick="window.location.href='save.html'">Saved</button>
+            <button class="navProfile" onclick="window.location.href='profile.html'">Profile</button>
+        </div>
+    </center>
+</body>
+
+<script src="../public/script/live.js"></script>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../asset/app-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacify</title>
+    <link rel="stylesheet" href="../public/css/home.css">
+</head>
+
+<body id="body">
+    <center>
+        <!-- header// it contains functions -->
+        <div class="header">
+            <!-- user can choose discount type to generate the receipt -->
+            <div class="discount">
+                <p>Discount</p>
+                <button class="mrp" onclick="readList(list, 'mrp');" id="mrp">MRP</button>
+                <button class="d25" onclick="readList(list, 'd25');" id="d25">25%</button>
+                <button class="d35" onclick="readList(list, 'd35');" id="d35">35%</button>
+                <button class="d42" onclick="readList(list, 'd42');" id="d42">42%</button>
+                <button class="d50" onclick="readList(list, 'd50');" id="d50">50%</button>
+            </div>
+
+            <!-- it display the totals //vp,amt,units// -->
+            <div class="result" id="totals">
+                <div>0 vp</div>
+                <div id="priceDiv">₹0</div>
+                <div>0</div>
+            </div>
+        </div>
+        
+        <!-- list of the products -->
+        <div class="parent" id="table">
+            <!-- header of the list -->
+            <div class="child gap">
+                <div class="product">Products</div>
+                <div class="vp">VP</div>
+                <div class="price">Price</div>
+
+                <div class="quantity">
+                    <button>-</button><div>qty.</div><button>+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- a remark input field -->
+        <div id="inputDiv">
+            
+        </div>
+
+        <!-- the two button on the bottom-right // clear, generate-receipt // -->
+        <div class="resetAndGenerateDiv" id="resetAndGenerateDiv">
+                
+        </div>
+
+        <!-- navigation bar -->
+        <div class="navigation" id="navigation">
+            <button class="navHome">Home</button>
+            <button class="navLive" onclick="window.location.href='live.html'">Live</button>
+            <button class="navSaved" onclick="window.location.href='save.html'">Saved</button>
+            <button class="navProfile" onclick="window.location.href='profile.html'">Profile</button>
+        </div>
+    </center>
+</body>
+
+<script src="../public/script/home.js"></script>
+
+</html>

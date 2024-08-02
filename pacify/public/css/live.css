@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* the dark portion */
+.header {
+    height: 30px;
+    width: 100dvw;
+    max-width: 800px;
+    background-color: #001F2B;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* save and clear all */
+.savesAndClearAllDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100dvw;
+    max-width: 800px;
+}
+.savesAndClearAllDiv h3 {
+    margin-inline: 30px;
+    font-weight: bold;
+    color: #385059;
+}
+.savesAndClearAllDiv button {
+    margin-inline: 30px;
+    height: 30px;
+    width: 100px;
+    background-color: #385059;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+}
+
+/* container for the components */
+.liveComponentDiv {
+    /* background-color: green; */
+    width: 100dvw;
+    max-width: 800px;
+    margin-bottom: 100px;
+    min-height: 70dvh;
+}
+/* style for a single post */
+.component {
+    background-color: #FFE7E7;
+    margin-inline: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #E89393;
+    border-radius: 7px;
+}
+.component {
+    text-align: left;
+}
+
+/* trial started */
+.component02 {
+    text-align: left;
+    background-color: #E6ECF0;
+    margin-inline: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #C8D6DF;
+    border-radius: 7px;
+}
+.component02 p {
+    color: #385059;
+}
+.notLiveDiv p {
+    background-color: #385059;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    width: 120px;
+    height: 20px;
+    text-align: center;
+    align-content: center;
+    border-radius: 4px;
+    margin: 0px;
+}
+/* trial ended */
+.upperComponent {
+    display: flex;
+}
+.imageDiv img {
+    min-width: 120px;
+    width: 30dvw;
+    max-width: 150px;
+    border-radius: 4px;
+    margin: 10px;
+}
+.textAndStatusDiv {
+    margin-right: 10px;
+    flex: 1;
+}
+.liveDiv, .notLiveDiv {
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.liveDiv p {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    align-content: center;
+    border-radius: 4px;
+    margin: 0px;
+}
+.textDiv p {
+    margin: 0px;
+    margin-top: 4px;
+    font-size: 12px;
+}
+.description {
+    text-align: justify;
+}
+.lowerComponent {
+    margin: 10px;
+    margin-top: 0px;
+}
+.lowerComponent p {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+.saveDiv {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: sticky;
+    left: 100dvw;
+    right: 0;
+    bottom: 80px;
+    margin-right: 20px;
+}
+.saveReceipt {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background-color:  #385059;
+    color: white;
+    
+    font-size: 25px;
+}
+.saveReceipt:active {
+    background-color: #516f7a;
+}
+
+
+
+/* navigation bar at the bottom */
+.navigation {
+    width: 100dvw;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-top: 1px solid #91ABB4;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+}
+.navHome, .navLive, .navSaved, .navProfile {
+    height: 70px;
+    width: 60px;
+    background-color: transparent;
+    border: none;
+    color: #7D8588;
+    font-weight: bold;
+    font-size: 13px;
+}
+.navLive {
+    border-top: 3px solid #385059;
+    color: #385059;
+    text-decoration: underline;
+}
